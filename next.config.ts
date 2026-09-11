@@ -67,6 +67,8 @@ const legacyPageRedirects = legacyPageMapping.flatMap(([source, destination]) =>
 ]);
 
 const config: NextConfig = {
+  // Repository instructions are maintained by contributors, not the framework.
+  agentRules: false,
   experimental: {
     turbopackFileSystemCacheForDev: true,
   },
